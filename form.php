@@ -55,7 +55,6 @@
 		
 		<?php $total = $subtotal * 1.13; ?>
 		<p class="write-total"> <?php echo number_format ($total, 2); ?></p>
-
 	</div>
 	
 </body> 
