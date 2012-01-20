@@ -7,30 +7,56 @@
 
 <body>
 
+<h1>Money Calculator Form</h1>
+
 <form action="form.php" method="post">
 
-	<label for="num1">First Number</label>
-	<input type="number" id="num1" name="num1">
+	<div class="numbers">
+		<label for="num1">First Number</label>
+		<input type="number" id="num1" name="num1">
+	</div>
 	
-	<label for="num2">Second Number</label>
-	<input type="number" id="num2" name="num2">
+	<div id="function">
+		<label for="function">Select a Mathematical Function</label>
+		<select id="function" name="function">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+	</div>
+
+	<div class="numbers">
+		<label for="num2">Second Number</label>
+		<input type="number" id="num2" name="num2">
+	</div>
 	
-	<label for="function">Function</label>
-	<select id="function" name="function">
-		<option value="+">+</option>
-		<option value="-">-</option>
-		<option value="*">*</option>
-		<option value="/">/</option>
-	</select>
-
-	<button type="submit">Calculate</button>
-
+	<div id="button">
+		<button type="submit">Calculate</button>
+	</div>
 </form>
 
-<?php if ($_POST['function'] == '+') : ?>
-		<p><strong><?php echo number_format(($_POST['num1'] + $_POST['num2']) * 1.13, 2); ?></strong></p>
-<?php endif; ?>
+	<div id="total"
+		<?php if ($_POST['num1'] && $_POST['function'] && $_POST['num2']) : ?>
+		
+			<?php if ($_POST['function'] == '+') : ?>
+			<?php $subtotal = $_POST['num1'] + $_POST['num2']; ?>
+			
+			<?php elseif ($_POST['function'] == '-') : ?>
+			<?php $subtotal = $_POST['num1'] - $_POST['num2']; ?>
+			
+			<?php elseif ($_POST['function'] == '*') : ?>
+			<?php $subtotal = $_POST['num1'] * $_POST['num2']; ?>
+			
+			<?php elseif ($_POST['function'] == '/') : ?>
+			<?php $subtotal = $_POST['num1'] / $_POST['num2']; ?>
+			<?php endif; ?>
+		<?php endif; ?>
+		
+		<?php $total = $subtotal * 1.13; ?>
+		<p class="write-total"> <?php echo number_format ($total, 2); ?></p>
 
-
-</body>
+	</div>
+	
+</body> 
 </html>
