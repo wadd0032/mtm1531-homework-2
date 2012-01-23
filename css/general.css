@@ -10,7 +10,7 @@ html {
 
 body {
 	margin: 50px auto;
-	padding: 30px 55px;
+	padding: 50px 55px;
 	width: 311px;
 	background-color: #FF9;
 	
@@ -19,7 +19,7 @@ body {
 
 h1 {
 	margin: 0;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	
 	font: bold 150%/1.5 Verdana, sans-serif;
 }
@@ -40,28 +40,20 @@ h1 {
 
 #button {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 25px 0;
 	
-	font: italic 100%/1.5 Verdana, sans-serif;
-	text-align: right;
-}
-
-#button {
-	padding-bottom: 15px;
-
-	font: italic 100%/1.5 Verdana, sans-serif;
 	text-align: right;
 }
 
 #total {
-	padding-top: 10px;
-	font: bold 100%/1.5 Verdana, sans-serif;
+	padding-top: 20px;
+
+	font-weight: bold;
 	text-align: right;
 	
 	border-top: 1px solid #000;
 }
 
 #num1, #num2 {
-	font: normal 100%/1.5 Verdana, sans-serif;
 	text-align: right;
 }
