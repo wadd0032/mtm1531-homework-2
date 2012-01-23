@@ -1,3 +1,67 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+	margin: 0;
+	padding: 0;
+	
+	background-color: #360;
+}
+
+body {
+	margin: 50px auto;
+	padding: 30px 55px;
+	width: 311px;
+	background-color: #FF9;
+	
+	font: normal 100%/1.5 Verdana, sans-serif;
+}
+
+h1 {
+	margin: 0;
+	padding-bottom: 10px;
+	
+	font: bold 150%/1.5 Verdana, sans-serif;
+}
+
+.numbers {
+	padding: 20px 0;
+	
+	text-align: right;
+}
+
+#function {
+	margin: 0;
+	padding: 0;
+	
+	font: italic 100%/1.5 Verdana, sans-serif;
+	text-align: right;
+}
+
+#button {
+	margin: 0;
+	padding: 0;
+	
+	font: italic 100%/1.5 Verdana, sans-serif;
+	text-align: right;
+}
+
+#button {
+	padding-bottom: 15px;
+
+	font: italic 100%/1.5 Verdana, sans-serif;
+	text-align: right;
+}
+
+#total {
+	padding-top: 10px;
+	font: bold 100%/1.5 Verdana, sans-serif;
+	text-align: right;
+	
+	border-top: 1px solid #000;
+}
+
+#num1, #num2 {
+	font: normal 100%/1.5 Verdana, sans-serif;
+	text-align: right;
+}
