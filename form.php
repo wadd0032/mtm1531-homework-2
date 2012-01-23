@@ -38,7 +38,9 @@
 </form>
 
 	<div id="total"
-		<?php if ($_POST['num1'] && $_POST['function'] && $_POST['num2']) : ?>
+		<?php $subtotal = 0; ?>
+		
+		<?php if (isset($_POST['num1']) && isset($_POST['function']) && isset($_POST['num2'])) : ?>
 		
 			<?php if ($_POST['function'] == '+') : ?>
 			<?php $subtotal = $_POST['num1'] + $_POST['num2']; ?>
